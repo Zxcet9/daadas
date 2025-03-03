@@ -90,4 +90,13 @@ SELECT ФИО
 FROM CTE
 WHERE RowNum <= TotalCount * 0.1;
 
+CREATE TABLE Секции (
+    Название_секции VARCHAR(100) NOT NULL,
+    Воспитатель VARCHAR(100) NOT NULL,
+    Количество_занятий INT NOT NULL,
+    Стоимость DECIMAL(10, 2) NOT NULL,
+    Места_в_группе INT NOT NULL,
+    PRIMARY KEY (Название_секции, Воспитатель)
+);
 
+SELECT * FROM Секции;
